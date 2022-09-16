@@ -43,7 +43,7 @@ const HomeDataItem = [
         id: 6,
         title: "Solar Roof",
         des: "Order Online for Touchless Delivery",
-        backgroundImage: "solar-roof",
+        backgroundImage: "solar-roof.jpg",
         leftBtnText: "Order Now",
         rightBtnText: "Learn More"
     },
