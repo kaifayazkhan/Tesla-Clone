@@ -1,11 +1,11 @@
 const MenuData = [
-    { id: 1, text: 'Model 3' },
-    { id: 2, text: 'Model Y' },
-    { id: 3, text: 'Model S' },
-    { id: 4, text: 'Model X' },
-    { id: 5, text: 'Solar Roof' },
-    { id: 6, text: 'Solar Panels' },
-]
+    { id: 1, text: 'Model 3', path: '/model3' },
+    { id: 2, text: 'Model Y', path: '/modelY' },
+    { id: 3, text: 'Model S', path: '/modelS' },
+    { id: 4, text: 'Model X', path: '/modelX' },
+    { id: 5, text: 'Solar Roof', path: '/solarRoof' },
+    { id: 6, text: 'Solar Panels', path: '/solarPanels' }
+];
 const BurgerData = [
     { id: 1, text: 'Existing Inventory' },
     { id: 2, text: 'Used Inventory' },

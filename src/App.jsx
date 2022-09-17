@@ -1,13 +1,21 @@
 import React from 'react';
 import Header from './Componentes/Header';
 import Home from './Componentes/Home';
+import Models from './Componentes/ModelS/Models';
+import {
+  Routes,
+  Route,
+} from 'react-router-dom';
 
 const App = () => {
   return (
-    <div>
+    <>
       <Header />
-      <Home />
-    </div>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path="models" element={<Models />} />
+      </Routes>
+    </>
   )
 }
 

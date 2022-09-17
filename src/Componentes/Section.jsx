@@ -15,7 +15,6 @@ const Section = ({ title, des, backgroundImage, leftBtnText, rightBtnText }) => 
                 <Fade bottom>
                     <ButtonGroup>
                         <ButtonLeft>{leftBtnText}</ButtonLeft>
-
                         {rightBtnText && <ButtonRight>{rightBtnText}</ButtonRight>}
                     </ButtonGroup>
                 </Fade>

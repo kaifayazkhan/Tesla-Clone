@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Outlet } from 'react-router-dom';
 import styled from 'styled-components';
 import { FiMenu } from 'react-icons/Fi';
 import { TiTimes } from 'react-icons/Ti';
@@ -9,33 +10,36 @@ const Header = () => {
     const [burgerStatus, setBurgerStatus] = useState(false);
 
     return (
-        <Container>
-            <Link to='/'>
-                <img src="/images/logo.svg" alt="Logo Image" />
-            </Link>
-            <Menu>
-                {
-                    MenuData.map((currEle) => {
-                        return <li key={currEle.id}><Link to='/'>{currEle.text}</Link></li>
-                    })
-                }
-            </Menu>
-            <RightMenu>
-                <li><Link to='/'>Shop</Link></li>
-                <li><Link to='/'>Account</Link></li>
-                <CustomMenu onClick={() => setBurgerStatus(true)} />
-            </RightMenu>
-            <BurgerNav show={burgerStatus}>
-                <CloseWrapper>
-                    <CustomClose onClick={() => setBurgerStatus(false)} />
-                </CloseWrapper>
-                {
-                    BurgerData.map((currEle) => {
-                        return <li key={currEle.id}><Link to="/">{currEle.text}</Link></li>
-                    })
-                }
-            </BurgerNav>
-        </Container>
+        <>
+            <Container>
+                <Link to='/'>
+                    <img src="/images/logo.svg" alt="Logo Image" />
+                </Link>
+                <Menu>
+                    {
+                        MenuData.map((currEle) => {
+                            return <li key={currEle.id}><Link to={currEle.path}>{currEle.text}</Link></li>
+                        })
+                    }
+                </Menu>
+                <RightMenu>
+                    <li><Link to='/'>Shop</Link></li>
+                    <li><Link to='/'>Account</Link></li>
+                    <CustomMenu onClick={() => setBurgerStatus(true)} />
+                </RightMenu>
+                <BurgerNav show={burgerStatus}>
+                    <CloseWrapper>
+                        <CustomClose onClick={() => setBurgerStatus(false)} />
+                    </CloseWrapper>
+                    {
+                        BurgerData.map((currEle) => {
+                            return <li key={currEle.id}><Link to="/">{currEle.text}</Link></li>
+                        })
+                    }
+                </BurgerNav>
+            </Container>
+            {/* <Outlet /> */}
+        </>
     )
 }
 
