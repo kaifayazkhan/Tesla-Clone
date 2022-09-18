@@ -28,35 +28,35 @@ const TextContent_1 = ({ background, textcolor, topHeading, mainHeading, para })
 export default TextContent_1;
 
 const Container = styled.div`
-                widht:100%;
-                background-color:${props => props.bg};
-                padding:10vh 10vw;
-                display:flex;
-                @media (max-width:840px){
-                    flex - direction:column;
-                padding-top:20px;
-                padding-bottom:5vh;
+    widht:100%;
+    background-color:${props => props.bg};
+    padding:10vh 10vw;
+    display:flex;
+    @media (max-width:840px){
+        flex-direction:column;
+        padding-top:20px;
+        padding-bottom:5vh;
     }
-                `
+`
 const LeftCont = styled.div`
-                flex-basis:40%;
-                h1,p{
-                    color: ${props => props.color};
+    flex-basis:40%;
+    h1,p{
+        color: ${props => props.color};
     }
-                h1{
-                    margin - top:.5rem;
-                margin-bottom:1rem;
+    h1{
+        margin - top:.5rem;
+        margin-bottom:1rem;
     }
-                @media (max-width:800px){
-                    flex - basis:100%;
+    @media (max-width:800px){
+            flex - basis:100%;
     }
-                `
+`
 const RightCont = styled.div`
-                flex-basis:60%;
-                p{
-                    color:${props => props.color};
+    flex-basis:60%;
+    p{
+        color:${props => props.color};
     }
-                @media (max-width:800px){
-                    flex - basis:100%;
+    @media (max-width:800px){
+        flex - basis:100%;
     }
-                `
+`

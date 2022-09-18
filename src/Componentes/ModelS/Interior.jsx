@@ -27,7 +27,7 @@ const ItemText = styled.div`
     width:100%;
     text-align:center;
     background:#000000;
-    padding:10vh 0;
+    padding-top:10vh;
     h1{
     color:white;
     }

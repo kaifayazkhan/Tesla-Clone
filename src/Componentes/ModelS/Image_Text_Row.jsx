@@ -37,8 +37,9 @@ export default Image_Text_Row;
 
 const Container = styled.div`
     width:100%;
-    margin-top:15vh;
-    margin-bottom:15vh;
+    padding-top:15vh;
+    padding-bottom:15vh;
+    background:black;
 `
 
 const WrapTextImage = styled.div`

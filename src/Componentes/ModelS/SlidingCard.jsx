@@ -70,6 +70,8 @@ export default SlidingCard;
 
 const SlideCard = styled.div`
     width:100%;
+    background:black;
+    padding:10vh 0;
 `
 
 const Card = styled.div`

@@ -14,16 +14,18 @@ const VideoCard = () => {
 export default VideoCard;
 
 const Container = styled.div`
+background:black;
     width:100%;
     height:100vh;
-    margin-top:20vh;
-    @media (max-width:800px){
+    padding-top:10vh;
+    padding-bottom:10vh;
+    @media (max-width:840px){
     height:50vh;
-    margin-top:15vh;
+    padding-top:15vh;
     }
     @media (max-width:500px){
     height:30vh;
-    margin-top:15vh;
+    padding-top:15vh;
     }
 `
 const ContainerVideo = styled.div`

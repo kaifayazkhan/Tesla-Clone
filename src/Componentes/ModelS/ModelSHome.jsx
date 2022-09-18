@@ -36,7 +36,7 @@ const WrapDatas = styled.div`
     }
 `
 const ModelSHome = ({ bgImage, title, des, btnText }) => {
-    const windowWidth = window.innerWidth
+    const windowWidth = window.innerWidth;
     return (
         <>
             <Wrap bgImage={bgImage}>

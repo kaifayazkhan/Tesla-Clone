@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import Fade from 'react-reveal/Fade';
+import DummyLine from './DummyLine';
 
 
 const ElectricPowertrainData = [
@@ -29,17 +30,6 @@ const ElectricPowertrainData = [
         imagePath: "/images/ModelSPlaid.jpg"
     },
 ];
-
-const TopLine = () => {
-    reuturn(
-        <HeadLine></HeadLine>
-    )
-}
-const HeadLine = styled.div`
-    width:100%;
-    height:2px;
-    background-color:gray;
-`
 
 const WrapData = (props) => {
     return (
@@ -101,7 +91,7 @@ const ElectricPowertrain = () => {
                         ElectricPowertrainData.map((currEle, indx) => {
                             return (
                                 <ModelBox key={currEle.id} id={currEle.id} onClick={ChangeImage} color={colors} >
-                                    <HeadLine />
+                                    <DummyLine />
                                     <h1>{currEle.title}</h1>
                                     <p>{currEle.para}</p>
                                     <WrapCarData>
@@ -172,7 +162,7 @@ const ModelsModelPlaid = styled.div`
     justify-content:center;
     margin-top:10vh;
     overflow-x:hidden;
-    @media (max-width:500px){
+    @media (max-width:780px){
         overflow-y: hidden;
         overflow-x: scroll;
         -webkit-overflow-y:hidden;

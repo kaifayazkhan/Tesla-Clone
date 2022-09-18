@@ -33,12 +33,11 @@ const Header = () => {
                     </CloseWrapper>
                     {
                         BurgerData.map((currEle) => {
-                            return <li key={currEle.id}><Link to="/">{currEle.text}</Link></li>
+                            return <li key={currEle.id}><Link to={currEle.path}>{currEle.text}</Link></li>
                         })
                     }
                 </BurgerNav>
             </Container>
-            {/* <Outlet /> */}
         </>
     )
 }
@@ -112,6 +111,8 @@ const CustomMenu = styled(FiMenu)`
 `
 
 const BurgerNav = styled.div`
+    height:100%;
+    overflow-y:scroll;
     position:fixed;
     top:0;
     bottom:0;
