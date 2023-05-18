@@ -72,8 +72,8 @@ const Wrap = styled.div`
     background-repeat:no-repeat;
     display:flex;
     flex-direction:column;
-    justify-content:space-between;//vertical-align
-    align-items:center;//horizontal-align
+    justify-content:space-between;
+    align-items:center;
     background-image: ${props => `url("/images/${props.bgImage}")`}
 `
 

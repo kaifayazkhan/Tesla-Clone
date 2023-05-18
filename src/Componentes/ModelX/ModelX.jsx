@@ -28,7 +28,7 @@ const ModelX = () => {
             <VideoCard />
             <SlidingCard />
             <ImageTextRow ImageTextData={ImageTextData1} />
-            <ModelSHome bgImage={'/images/Model-X-Performance-Hero-Desktop-LHD.jpg'} />
+            <ModelSHome bgImage={'Model-X-Performance-Hero-Desktop-LHD.jpg'} />
             <TextContent1
                 background={"white"}
                 textcolor={"black"}
@@ -37,7 +37,7 @@ const ModelX = () => {
                 para={"Model S Plaid has the quickest acceleration of any vehicle in production. Updated battery architecture for all Model S trims enables back-to-back track runs without performance degradation. Chat with a Tesla Advisor to learn more about Model S."}
             />
             <ElectricPowertrain />
-            <ModelSHome bgImage={'/images/Model-X-Exterior-Hero-Desktop-LHD.jpg'} />
+            <ModelSHome bgImage={'Model-X-Exterior-Hero-Desktop-LHD.jpg'} />
             <TextContent1
                 background={"black"}
                 textcolor={"white"}

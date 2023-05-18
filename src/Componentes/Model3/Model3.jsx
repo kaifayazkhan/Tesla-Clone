@@ -10,7 +10,7 @@ const Model3 = () => {
     return (
         <Container>
             <ModelSHome bgImage={HomeData[0].backgroundImage} title={HomeData[0].title} btnText={"Order Now"} />
-            <Banner background={'/images/Model-3-Performance-Hero-Desktop-LHD.jpg'} />
+            <Banner background={'Model-3-Performance-Hero-Desktop-LHD.jpg'} />
             <FooterTextData />
             <Footer />
         </Container>

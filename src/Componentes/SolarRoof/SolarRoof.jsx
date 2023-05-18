@@ -14,7 +14,6 @@ const SolarRoof = () => {
     return (
         <Container>
             <ModelSHome bgImage={HomeData[5].backgroundImage} title={HomeData[5].title} btnText={"Order Now"} />
-            <Banner background={'/images/solar-roof.jpg'} />
             <TextContent1
                 background={"white"}
                 textcolor={"black"}
@@ -22,8 +21,7 @@ const SolarRoof = () => {
                 mainHeading={"Complement Your Home’s Aesthetic"}
                 para={"Install Solar Roof and power your home with a fully integrated solar and energy storage system. The glass solar tiles and steel roofing tiles look great up close and from the street, complementing your home’s natural styling. Chat with an Energy Advisor to ask any questions about installing solar with Tesla."}
             />
-            <VideoCard />
-            <VideoBanner />
+            <Banner background={'solar-roof.jpg'} />
             <TextContent1
                 background={"white"}
                 textcolor={"black"}
@@ -31,7 +29,7 @@ const SolarRoof = () => {
                 mainHeading={"Trusted Expertise"}
                 para={"Our in-house team of energy professionals has installed nearly 4.0 GW of solar across approximately 480,000 roofs—cumulatively generating over 25.0 TWhs of clean energy. From design to power on, we take care of everything. Chat with an Energy Advisor to ask any questions about Solar Roof."}
             />
-            <Banner background={'/images/SR-tesla-app-D.jpg'} />
+            <Banner background={'SR-tesla-app-D.jpg'} />
             <TextContent1
                 background={"white"}
                 textcolor={"black"}
