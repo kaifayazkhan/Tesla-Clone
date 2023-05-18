@@ -71,7 +71,7 @@ const VideoBanner = () => {
         <>
             <Container>
                 <VideoContainer>
-                    <video src="../../../public/video/GoAnywhere.mp4" muted loop autoPlay></video>
+                    <video src="/video/GoAnywhere.mp4" muted loop autoPlay></video>
                     <TextContainer>
                         {VideoTopData.map((curEle) => {
                             return (

@@ -29,7 +29,7 @@ const Models = () => {
             <VideoCard />
             <SlidingCard />
             <ImageTextRow ImageTextData={ImageTextData1} />
-            <ModelSHome bgImage={'../../../public/images/Model-S-Performance.jpg'} />
+            <ModelSHome bgImage={'/images/Model-S-Performance.jpg'} />
             <TextContent1
                 background={"white"}
                 textcolor={"black"}

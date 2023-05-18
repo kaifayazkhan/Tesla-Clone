@@ -15,7 +15,7 @@ const Container = styled.div`
     background-size:cover;
     background-repeat:no-repeat;
     background-position:center;
-    background-image:${props => `url("../../../public/images/${props.bgImage}")`};
+    background-image:${props => `url("/images/${props.bgImage}")`};
      @media (max-width:840px){
         height:75vh;
      }
